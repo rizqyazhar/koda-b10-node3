@@ -24,20 +24,22 @@ async function main() {
       }
       break;
     case "2":
-      showTable(books);
-      askBook = await askQuestion("Mau minjem buku apa? (masukkan option)");
+      {
+        showTable(books);
+        askBook = await askQuestion("Mau minjem buku apa? (masukkan option)");
 
-      const getPinjam = pinjam(books, askBook);
-      if (getPinjam.value === false) {
-        console.log("Buku tidak ada...");
-        main();
-      }
-      showPeminjaman(getPinjam.buku);
-      askRoute = await askQuestion("Masih mau disini?(y/n) ");
-      if (askRoute === "y") {
-        return main();
-      } else {
-        stopProgram = true;
+        const getPinjam = pinjam(books, askBook);
+        if (getPinjam.value === false) {
+          console.log("Buku tidak ada...");
+          main();
+        }
+        showPeminjaman(getPinjam.buku);
+        askRoute = await askQuestion("Masih mau disini?(y/n) ");
+        if (askRoute === "y") {
+          return main();
+        } else {
+          stopProgram = true;
+        }
       }
       break;
 
