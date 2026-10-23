@@ -49,6 +49,9 @@ async function main() {
       console.log("Mohon masukkan sesuai options...");
       main();
   }
+  if (!stopProgram) return main();
+
+  if (stopProgram) return handleExit();
 }
 
 main();
