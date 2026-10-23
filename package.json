@@ -1,0 +1,28 @@
+{
+  "name": "koda-b10-node3",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/rizqyazhar/koda-b10-node3#readme",
+  "bugs": {
+    "url": "https://github.com/rizqyazhar/koda-b10-node3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizqyazhar/koda-b10-node3.git"
+  },
+  "license": "ISC",
+  "author": "rizqyazhar",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./index.mjs",
+    "start": "node ./index.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
