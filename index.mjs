@@ -39,6 +39,15 @@ async function main() {
       } else {
         stopProgram = true;
       }
+      break;
+
+    case "3":
+      stopProgram = true;
+      break;
+
+    default:
+      console.log("Mohon masukkan sesuai options...");
+      main();
   }
 }
 
