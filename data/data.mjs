@@ -70,3 +70,9 @@ export const books = [
     genre: "Pengembangan Diri",
   },
 ];
+
+export const mainRouteLabel = {
+  1: "Lihat Buku",
+  2: "Pinjam Buku",
+  0: "Keluar",
+};
