@@ -4,6 +4,7 @@ import {
   showOptions,
   showPeminjaman,
   showTable,
+  handleExit,
 } from "./lib/helper.mjs";
 import { books, mainRouteLabel } from "./data/data.mjs";
 
