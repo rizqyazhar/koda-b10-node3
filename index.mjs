@@ -34,7 +34,7 @@ async function main() {
           console.log("Buku tidak ada...");
           main();
         }
-        showPeminjaman(getPinjam.buku);
+        showPeminjaman(getPinjam.data);
         askRoute = await askQuestion("Masih mau disini?(y/n) ");
         if (askRoute === "y") {
           return main();
