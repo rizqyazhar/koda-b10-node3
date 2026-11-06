@@ -31,8 +31,14 @@ async function main() {
 
         const getPinjam = pinjam(books, askBook);
         if (getPinjam.value === false) {
-          console.log("Buku tidak ada...");
-          main();
+          console.log("Yah, bukunya gak ada...");
+          const ask = await askQuestion(
+            "Minjem buku yang lain aja atau udahan? (y/n)",
+          );
+          if (ask === "y") {
+            return main();
+          }
+          return handleExit();
         }
         showPeminjaman(getPinjam.data);
         askRoute = await askQuestion("Masih mau disini?(y/n) ");
